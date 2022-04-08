@@ -1,0 +1,140 @@
+body{
+    background: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------------------------
+Navbar
+---------------------------------------*/
+.navbar__container{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    background-color:#333;
+    border: 0;
+    padding: 0;
+    top: 0;
+}
+.navbar__menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar__menu__item{
+    width: 100%;
+}
+
+.navbar__menu__link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    color: #fff;
+}
+/*-------------------------------------
+Content
+---------------------------------------*/
+.content{
+    margin-left: 10%;
+    padding: 10px;
+}
+
+/*-------------------------------------
+Header
+---------------------------------------*/
+.header{
+    border-bottom: 1px solid #333;
+}
+.header img{
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+}
+.header__left{
+    float: left;
+    width: 50%;
+}
+.header__right{
+    float: right;
+    width: 50%;
+}
+.descrizione{
+    font-size: 24px;
+    text-align: justify;
+}
+
+/*-------------------------------------
+Skill Table
+---------------------------------------*/
+
+.skill__table{
+    padding: 25px;
+    margin: 10px;
+
+}
+.skill__table__title{
+    text-align: center;
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+.voto{
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid;
+    margin: 0;
+}
+/*-------------------------------------
+Skill Table
+---------------------------------------*/
+
+.cards{
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid;
+}
+.cards p{
+    text-align: center;
+}
+.card__1{
+    width: 30%;
+}
+.card__2{
+    width: 30%;
+}
+.card__2 p{
+    text-align: justify;
+}
+.card__3{
+    width: 30%;
+}
+/*-------------------------------------
+Bonus
+---------------------------------------*/
+
+.bonus{
+    display: inline-block;
+    align-items: center;
+}
+
+.bonus__1{
+    height: fit-content;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  * html .clearfix             { zoom: 1; } /* IE6 */
+  *:first-child+html .clearfix { zoom: 1; } /* IE7 */

@@ -5,68 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Curriculum Marino Nicola</title>
 </head>
 <body>
-    <!-- Nome e cognome -->
-    <h1>Nicola Marino</h1>
-    <!-- Immagine profilo -->
-    <img src="../img/io.jpg" alt="Foto personale">
-    <!-- Email -->
-    <h2>mar.nicola98@gmail.com</h2>
-    <!-- Descrizione -->
-    <p>
-        Studente al terzo anno di università con brevi esperienze di stage in ambito di Back Office e Front Office in hotel e associazioni sportive e ricreative. 
-        Forte motivazione ad apprendere e crescere professionalmente nel ruolo di sviluppatore. Super appassionato di fumetti.
-    </p>
-    <!-- Tabella Skils -->
-    <table>
-        <tr>
-            <th>Autonomia</th>
-            <th>Autostima</th>
-            <th>Adattamento</th>
-            <th>Pianificazione</th>
-            <th>Precisione</th>
-            <th>Intraprendenza</th>
-            <th>Problem Solving</th>
-            <th>Lavoro di Gruppo</th>    
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-            <td>10</td>
-        </tr>
-    </table>
-    <!-- lista competenze -->
+    <!-- Navbar -->
+    <nav class="navbar__container">
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#Presentazione" class="navbar__menu__link">Presentazione</a></li>
+            <li class="navbar__item"><a href="#Skills" class="navbar__menu__link">Skills</a></li>
+            <li class="navbar__item"><a href="#Competenze" class="navbar__menu__link">Competenze</a></li>
+            <li class="navbar__item"><a href="#Bonus" class="navbar__menu__link">Bonus</a></li>
 
-    <p>Competenze:</p>
-    <ul>
-        
-        <li>Skill manageriali</li>
-        <li>Computer's Skill</li>
-        <li>Coaching e leadership (livello internazionale)</li>
-        <li>Collezionista certificato</li>
-    </ul>
-    <!-- Motivazione  -->
-    <p>
-        L'azienda dovrebbe tenermi in considerazione perché sono un esperto del settore, ho una <strong>collezione invidiabile </strong> e <strong>conoscenze approfondite </strong> nell'argomento. 
-        Sono un <strong>instancabile lavoratore </strong>  e ho diverse <b><em>references </em></b> con <mark>esperti nel settore</mark>. Potrei realmente essere una figura indispensabile per l'attività stessa.
-    </p>
-
-    <!-- Progetti futuri -->
-    <p>Progetti futuri:</p>
-    <ol>
-        <li>Creare una rete tra fumetterie per favorire il collezionismo</li>
-        <li>Diventare una figura di riferimento del settore</li>
-        <li>Far diventare l' e-commerce dei fumetti un'abitudine per tutti gli appassionati</li>
-    </ol>
-    <!-- Bonus -->
-    <p>Ecco qui le references e la mia collezione, così da poter valutare le competenze della mia passione che spero diventi presto un lavoro</p>
-    <img src="https://i.ebayimg.com/00/z/owMAAOSwQhNdB5ha/$_59.JPG" alt="Collezione fumetti">
+        </ul>
+    </nav>
+    <!-- Contenuto CV -->
+    <div class="content">
+        <!-- Container Nome Email Foto -->
+        <div class="header clearfix" id="Presentazione">
+            <div class="header__left">
+                <!-- Nome e cognome -->
+                <p>Nome e Cognome: </p>
+                <h1>Nicola Marino</h1>
+                <!-- Email -->
+                <p>Email: </p>
+                <h2>mar.nicola98@gmail.com</h2>
+                <!-- Descrizione -->
+                <p class="descrizione">
+                    Studente al terzo anno di università con brevi esperienze di stage in ambito di Back Office e Front Office in hotel e associazioni sportive e ricreative. 
+                    Forte motivazione ad apprendere e crescere professionalmente nel ruolo di sviluppatore. Super appassionato di fumetti.
+                </p>
+            </div>
+            <div class="header__right">
+                <!-- Immagine profilo -->
+            <img src="../img/io.jpg" alt="Foto personale">
+            </div>        
+        </div>
+        <!-- Tabella Skills -->
+        <div class="skill__table" id="#Skills">
+        <!-- Tabella Skils -->
+        <p class="skill__table__title">Tabella Skills:</p>
+        <table>
+            <tr>
+                <th>Autonomia</th>
+                <th>Autostima</th>
+                <th>Adattamento</th>
+                <th>Pianificazione</th>
+                <th>Precisione</th>
+                <th>Intraprendenza</th>
+                <th>Problem Solving</th>
+                <th>Lavoro di Gruppo</th>    
+            </tr>
+            <tr>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+                <td class="voto">10</td>
+            </tr class="voto">
+        </table>
+        </div>
+        <!-- Cards -->
+        <div class="cards clearfix" id="Competenze">
+            <div class="card__1">
+            <!-- lista competenze -->
+                <p>Competenze:</p>
+                <ul>
+                    <li>Skill manageriali</li>
+                    <li>Computer's Skill</li>
+                    <li>Coaching e leadership (livello internazionale)</li>
+                    <li>Collezionista certificato</li>
+                </ul>
+            </div>
+            <div class="card__2">
+            <!-- Motivazione  -->
+                <p style="text-align:center;">Motivazioni</p>
+                <p>
+                    L'azienda dovrebbe tenermi in considerazione perché sono un esperto del settore, ho una <strong>collezione invidiabile </strong> e <strong>conoscenze approfondite </strong> nell'argomento. 
+                    Sono un <strong>instancabile lavoratore </strong>  e ho diverse <b><em>references </em></b> con <mark>esperti nel settore</mark>. Potrei realmente essere una figura indispensabile per l'attività stessa.
+                </p>
+            </div>
+            <div class="card__3">
+             <!-- Progetti futuri -->
+                <p>Progetti futuri:</p>
+                <ol>
+                    <li>Creare una rete tra fumetterie per favorire il collezionismo</li>
+                    <li>Diventare una figura di riferimento del settore</li>
+                    <li>Far diventare l' e-commerce dei fumetti un'abitudine per tutti gli appassionati</li>
+                </ol>
+            </div>
+        </div>    
+        <div class="bonus clearfix" id="Bonus">
+        <!-- Bonus -->
+            <p>Ecco qui le references e la mia collezione, così da poter valutare le competenze della mia passione che spero diventi presto un lavoro</p>
+            <div class="bonus__1">
+                <img src="https://i.ebayimg.com/00/z/owMAAOSwQhNdB5ha/$_59.JPG" alt="Collezione fumetti">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
