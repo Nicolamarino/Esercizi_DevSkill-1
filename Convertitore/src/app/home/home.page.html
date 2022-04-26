@@ -1,42 +1,39 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Convertitore
-    </ion-title>
+    <ion-title>Convertitore</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid class ="ion-grid-padding">
-    <ion-row class="ion-justify-content-center">
-      <h1> Convertitore</h1>
-    </ion-row>
-    <ion-row>
-      <ion-col size = "3">
-        <ion-item >
-          <ion-label position="floating">KM</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size = "3">
-        <ion-item >
-          <ion-label position="floating">Miles</ion-label>
-          <ion-input > </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size = "3">
-        <ion-item>
-          <ion-label position="floating">Fahrenheit </ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size = "3">
-        <ion-item>
-          <ion-label position="floating">Celsius</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
- 
+    <ion-grid class="ion-grid-padding">
+      <ion-row class="ion-justify-content-center">
+        <h1>Convertitore</h1>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+          <ion-item>
+            <ion-label position="floating">Chilometri</ion-label>
+            <ion-input [(ngModel)]="km" (keyup)="converter('km')" name="chilometri" id="chilometri" type="number" ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-label position="floating"> Miles</ion-label>
+            <ion-input [(ngModel)]="mi" (keyup)="converter('mi')" name="miles" id="miles" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-label position="floating">Celsius</ion-label>
+            <ion-input [(ngModel)]="c" (keyup)="converter('c')"name="c" id="c" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-label position="floating">Farheneith</ion-label>
+            <ion-input [(ngModel)]="f" (keyup)="converter('f')"name="f" id="f" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
