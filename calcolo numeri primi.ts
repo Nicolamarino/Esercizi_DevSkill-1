@@ -1,19 +1,18 @@
-function isPrimo(numeroP:number){
+let contNumeriPrimi = 0;
+let n = 2;
+let messaggio: string = "Ho trovato i seguenti numeri primi";
+while (contNumeriPrimi < 30) {
+    let prime: boolean = true;
 
-    for (let i=2; i<=numeroP/2; i++){
-        if(numeroP % i == 0){
-            return false;
+    for (let i = 2; i < n; i++) {
+        if (n % i == 0) {
+            prime = false;
         }
     }
-    return true;
-}
-let numero:number = 110;
-let array:number [] = [];
-for(let i = 1; i<= numero; i++){
-    if(isPrimo(i)){
-        array.push(i);
+    if (prime) {
+        messaggio += n + " ";
+        contNumeriPrimi++;
     }
+    n++;
 }
-
-console.log("I numeri primi calcolati sono: " + array.length);
-console.log("E sono: " + array);
+console.log(messaggio);
