@@ -11,28 +11,16 @@
       </ion-row>
       <ion-row>
         <ion-col size="3">
-          <ion-item>
-            <ion-label position="floating">Chilometri</ion-label>
-            <ion-input [(ngModel)]="km" (keyup)="converter('km')" name="chilometri" id="chilometri" type="number" ></ion-input>
-          </ion-item>
+          <app-custom-input [valore]="km" (eventoConversione)="notificaConversione($event)" misura="Chilometri"></app-custom-input>
         </ion-col>
         <ion-col size="3">
-          <ion-item>
-            <ion-label position="floating"> Miles</ion-label>
-            <ion-input [(ngModel)]="mi" (keyup)="converter('mi')" name="miles" id="miles" type="number"></ion-input>
-          </ion-item>
+          <app-custom-input [valore]="mi" (eventoConversione)="notificaConversione($event)" misura="Miglia"></app-custom-input>
         </ion-col>
         <ion-col size="3">
-          <ion-item>
-            <ion-label position="floating">Celsius</ion-label>
-            <ion-input [(ngModel)]="c" (keyup)="converter('c')"name="c" id="c" type="number"></ion-input>
-          </ion-item>
+          <app-custom-input [valore]="c" (eventoConversione)="notificaConversione($event)" misura="Celsius"></app-custom-input>
         </ion-col>
         <ion-col size="3">
-          <ion-item>
-            <ion-label position="floating">Farheneith</ion-label>
-            <ion-input [(ngModel)]="f" (keyup)="converter('f')"name="f" id="f" type="number"></ion-input>
-          </ion-item>
+          <app-custom-input [valore]="f" (eventoConversione)="notificaConversione($event)" misura="Farheneith"></app-custom-input>
         </ion-col>
       </ion-row>
     </ion-grid>
