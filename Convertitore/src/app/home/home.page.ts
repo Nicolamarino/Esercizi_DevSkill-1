@@ -10,7 +10,6 @@ export class HomePage {
   f: number;
   km: number;
   mi: number;
-  unita: string;
 
   constructor() {}
 
