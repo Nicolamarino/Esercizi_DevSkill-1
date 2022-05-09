@@ -23,5 +23,48 @@
           <app-custom-input [valore]="f" (eventoConversione)="notificaConversione($event)" misura="Farheneith"></app-custom-input>
         </ion-col>
       </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+          <h1 class="ion-text-center">3n + 1</h1>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2 class="ion-text-center">Valore I</h2>
+        </ion-col>
+        <ion-col>
+          <h2 class="ion-text-center">Valore J</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <H3 class="ion-text-center">I</H3>
+          <ion-item>
+            <ion-label position="floating">Inserisci valore iniziale</ion-label>
+            <ion-input type="number" [(ngModel)]="i" clear-on-edit name=""> </ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <h3 class="ion-text-center">J</h3>
+          <ion-item>
+            <ion-label position="floating">Inserisci valore finale</ion-label>
+            <ion-input type="number" [(ngModel)]="j" [name]="input"> </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+          <ion-col>
+            <h3 class="ion-text-center">La lunghezza massima tra {{z}} e {{k}} è {{max}} </h3>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-button (click)="massimo()">Calcola massimo </ion-button>
+          <ion-col></ion-col>
+        </ion-row>
     </ion-grid>
 </ion-content>

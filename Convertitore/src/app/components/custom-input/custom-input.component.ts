@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-custom-input',
@@ -10,12 +10,12 @@ export class CustomInputComponent implements OnInit {
   @Input() valore: number;
   valoreConvertito: number;
 
-  @Output() 
+  @Output()
   eventoConversione = new EventEmitter<string>();
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
   converter(): void {
     if (this.misura === "Celsius") {
       this.valoreConvertito = this.arrotonda((this.valore * 9 / 5) + 32);
@@ -26,9 +26,10 @@ export class CustomInputComponent implements OnInit {
     } else if (this.misura === "Miglia") {
       this.valoreConvertito = this.arrotonda(this.valore * 1.609);
     }
-    this.eventoConversione.emit(this.misura+":" + this.valoreConvertito);
+    this.eventoConversione.emit(this.misura + ":" + this.valoreConvertito);
   }
   arrotonda(risultato: number): number {
     return +risultato.toPrecision(3);
   }
 }
+

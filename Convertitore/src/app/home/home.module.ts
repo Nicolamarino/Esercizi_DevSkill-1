@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { CustomInputComponent } from '../components/custom-input/custom-input.component';
+import { Input3nComponent } from '../components/input3n/input3n.component';
 
 
 @NgModule({
@@ -15,6 +16,6 @@ import { CustomInputComponent } from '../components/custom-input/custom-input.co
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, CustomInputComponent]
+  declarations: [HomePage, CustomInputComponent,Input3nComponent]
 })
 export class HomePageModule {}
