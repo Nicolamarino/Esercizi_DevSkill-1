@@ -16,23 +16,26 @@ public class Calcolatrice {
 
         operatore= calcolo.getOp();
 
-        if(operatore.equals("+")){
-            risultato= calcolo.getNum1() + calcolo.getNum2();
-            System.out.println(risultato);
+        switch(operatore) {
+            case "+":
+                risultato = calcolo.getNum1() + calcolo.getNum2();
+                System.out.println(risultato);
+                break;
+            case "-":
+                risultato = calcolo.getNum1() - calcolo.getNum2();
+                System.out.println(risultato);
+                break;
+            case "*":
+                risultato = calcolo.getNum1() * calcolo.getNum2();
+                System.out.println(risultato);
+                break;
+            case "/":
+                risultato = calcolo.getNum1() / calcolo.getNum2();
+                System.out.println(risultato);
+                break;
+            default:
+                System.out.println("Operatore non valido");
         }
-        if(operatore.equals("-")){
-            risultato= calcolo.getNum1() - calcolo.getNum2();
-            System.out.println(risultato);
-        }
-        if(operatore.equals("*")){
-            risultato= calcolo.getNum1() * calcolo.getNum2();
-            System.out.println(risultato);
-        }
-        if(operatore.equals("/")){
-            risultato= calcolo.getNum1() / calcolo.getNum2();
-            System.out.println(risultato);
-        }
-
 
     }
 
